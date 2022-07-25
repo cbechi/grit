@@ -1,0 +1,370 @@
+.grid {
+    display: grid;
+    /*background-color: rgb(49,60,63);*/
+    /*background-color: rgb(229,227,226);*/
+    background-color: rgb(231,227,224);
+    /*background-color: rgb(128,141,134);*/
+    /*background: linear-gradient(to bottom, rgb(49,60,63),rgb(153,152,155));*/
+    width: 80vw;
+    height: 97vh;
+    /*border: 1px solid;*/
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    overflow: auto;
+    gap: 40px;
+    border-radius: 25px 25px 0px 0px;
+    grid-template-areas: 
+    "a a a a a"
+    "b c c c c"
+    "b d d d d"
+    "b e e e e"
+    "b f f f f"
+    "b g g g g"
+    "b h h h h"
+    "b i i i i"
+    ;
+}
+
+.a:hover {
+   /* box-shadow: inset 2px 2px 2px 0 #0a2c23;*/
+    /*opacity: 0.7;*/
+}
+ol span:hover{
+    /*opacity: none;*/
+    color: rgb(248,147,137);
+    transition: .9s;
+    /*font-weight: 500;*/
+}
+    
+
+/*ol:nth-child(2n+3):hover{
+    transform: scale(1.5s);
+}
+ol:nth-child(2n+2):hover{
+    transform: scale(1.5);
+}
+*/
+
+.grid-item {
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 50px 20px;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49,60,63);
+    margin-top: 1%;
+    
+}
+
+.grid::-webkit-scrollbar {
+    display: none;
+}
+.a {
+    grid-area: a;
+    flex-direction: row-reverse;
+    /*align-items: flex-end;*/
+    justify-content: space-between;
+    /*color: rgb(248,147,137);
+    font-family: 'Edu VIC WA NT Beginner', cursive;*/
+    position: fixed;
+    /*background-color: rgba(229,227,226, 0.5);*/
+    /*opacity: 0.8;*/
+    border: none;
+    width: 75vw;
+    
+
+    
+}
+
+.b {
+    grid-area: b;
+    background-image: url(./koi1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*opacity: 1;*/
+    position: sticky;
+    min-width: 150px;
+    max-width: 20vh;
+    margin-top: 30vh;
+    /*align-items: stretch;*/
+    border: none;
+
+
+}
+
+.c {
+    grid-area: c;
+    margin-top: 30vh;
+    
+
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+    justify-content: center;
+    border: none;
+    opacity: .5;
+    margin-right: 10%;
+}
+
+.h:hover {
+    transform: scale(2);
+    opacity: 1;
+    transition: .9s;
+}
+
+.i {
+    grid-area: i;
+    /*background-color: rgba(248,147,137,.7);*/
+    justify-content: end;
+    border: none;
+    
+}
+
+.i a{
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    /*color: rgba(49,60,63,.7);*/
+    /*border: 1px solid;
+    border-radius: 50% 15%;*/
+    color: rgb(248,147,137);
+    
+}
+
+.logo {
+    width: 7%;
+    /*max-width: 15%;*/
+    align-self: flex-start;
+    
+    
+}
+
+.iso {
+    align-self: flex-start;
+    color: rgb(248,147,137);
+    /*font-family: 'Edu VIC WA NT Beginner', cursive;*/
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 700%; 
+    /*border:  solid;
+    border-radius: 5%;
+    border-color: rgb(49,60,63);
+    padding-top: -30%;*/
+    margin-left: 2vw;
+    text-shadow: rgb(49,60,63) 3px 5px;
+    
+    
+}
+
+.haiku-text {
+        align-items: stretch;
+        column-count: 4;
+        column-gap: 2rem;
+        font-size: 1.5rem;
+        font-family: 'Edu VIC WA NT Beginner', cursive;
+        text-justify: inter-word;
+        text-align: center;
+        /*margin: 1rem;*/  
+        color: rgb(153,152,155);   
+        margin-right: 12vw;
+        margin-left: 5vw;
+        border-color: rgb(153,152,155);
+        box-shadow: rgb(153,152,155) 2px 5px 20px;
+        background-color: rgba(49,60,63,1);
+         
+}
+
+.haiku-text span {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3rem;
+}
+.haiku-text:hover{
+    transform: scale(1.2);
+    transition: .9s;
+}
+
+.menu {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    align-items: stretch;
+    color: rgba(49,60,63,1);
+    font-size: 1.8rem;
+    list-style: none;
+    
+}
+
+.menu  h2 {
+    
+    text-decoration: overline;
+    
+}
+
+.b a{
+    text-decoration: none;
+    color: rgba(49,60,63,1);
+}
+
+/*FORMULARIO*/
+
+.form1.haiku-text:hover {
+    transform: none;
+    
+} 
+
+.form1.haiku-text ol:hover {
+    transform: none;
+    
+} 
+
+.form1 {
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+}
+
+@media only screen and (max-width: 821px) {
+    .haiku-text {
+        flex-direction: column;
+        transform: none;
+        font-size: 2rem;
+
+    }
+
+    .iso {
+        font-size: 400%;
+    }
+    
+    .grid {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    .a {
+        justify-content: right;
+        
+    }
+    .c {
+        margin-top: 12vh;
+        position: relative;
+    }
+
+    .c:hover{
+        transform: none;
+    }
+    .d{
+        position: relative;
+    }
+    .d:hover{
+        transform: none;
+    }
+    .e{
+        position: relative;
+    }
+    .e:hover{
+        transform: none;
+    }
+    .f{
+        position: relative;
+    }
+    .f:hover{
+        transform: none;
+    }
+    .g{
+        position: relative;
+    }
+    .g:hover{
+        transform: none;
+    }
+    .h{
+        position: relative; 
+    }
+    .h:hover{
+        transform: none;
+    }
+}
+
+@media only screen and (max-width: 413px) {
+    .grid {
+        
+        grid-template-areas: 
+        "a b b"
+        "c c c"
+        "d d d"
+        "e e e"
+        "f f f"
+        "g g g"
+        "h h h"
+        "i i i"
+        ;
+}
+
+    .haiku-text{
+        font-size: 1.5rem;
+    }
+
+    .a{
+        justify-content: left;
+    }
+
+    .b{
+        position: relative;
+        background-image: none;
+        margin-top: 0px;
+        
+        
+    }
+
+    .menu {
+        padding-top: 0%;
+        padding-bottom: 0%;
+        align-items: baseline;
+        font-size: 100%;
+        
+    }
+    .menu  h2 {
+    
+        display: none;
+    }
+
+    .menu ol{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menu li {
+        margin-top: 20%;
+    }
+
+    .iso{
+        font-size: 11vw;
+    }
+
+    .c {
+        margin-top: 1vh;
+    }
+
+
+    }

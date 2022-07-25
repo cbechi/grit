@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./css/koi-logo.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Edu+VIC+WA+NT+Beginner&display=swap');
+    </style>
+    <title>Formulario</title>
+</head>
+<body>
+
+    <div class="grid">
+    <section  class="grid-item a"><img src="./css/koi-logo.jpg" alt="koi logo" class="logo"><span class="iso">Formulario</span> 
+    </section>
+        <article class="grid-item b menu">
+            
+            <li>
+                <ol><h2>Menu</h2></ol>
+                <ol><a href="tuhaiku.html"><span>Tu Haiku</span></a></ol>
+                <ol><a href="index.html"><span>Haiku</span></a></ol>
+                <ol><a href="about.html"><span>Nosotros</span></a></ol>
+            </li>
+        </article>
+        <article class="grid-item c haiku-text  form1">
+        <form method="get" action="datos.html" name="register"  >
+        <li>
+        <ol><label for="Nombre"> Nombre y Apellido</label>
+            <input type="text" name="Nombre" alt="Nombre y Apellido" placeholder="Nombre y Apellido"></ol>
+        <ol><label for="Edad">Edad</label>
+            <input type="number" name="Edad" value="" min="1" max="120"></ol>
+        <ol><select name="Genero" id="">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select></ol>
+        <ol><label for="Telefono">Telefono</label>
+            <input type="tel" name="Telefono" value="" placeholder="0342 "></ol>
+        <ol><label for="Fecha-nac">Fecha de Nacimiento</label>
+            <input type="date" name="Fecha-nac" id=""></ol>
+        <ol><label for="Email">Email</label>
+            <input type="email" name="Email" id="" placeholder="tuemail@server.com"></ol>
+        <ol><input type="checkbox"> Suscribirse al newsletter</ol>
+        <ol><input type="submit" value="Enviar formulario" formtarget="_blank">
+            <input type="reset" value="Resetear formulario"></ol>
+        </li>
+        </form>
+        </article>
+    
+        <footer class="grid-item i"><a href="mailto:666international@gmail.com"><footer>By Charlie.6ix</span></a></aside>
+</div>
+</body>
+
+</html>
